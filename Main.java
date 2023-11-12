@@ -92,8 +92,6 @@ public class Main {
 
             if (userInput.equals("auth")) {
                 HttpServer server = HttpServer.create();
-                //    Server server = new Server();
-                //   server.open();
                 server.bind(new InetSocketAddress(8080), 0);
                 server.createContext("/",
                         new HttpHandler() {
